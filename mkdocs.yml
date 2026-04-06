@@ -1,0 +1,51 @@
+site_name: Pergam Data Processing
+site_description: Documentation for the Pergam drone methane-processing notebook and workflow.
+site_url: !ENV [READTHEDOCS_CANONICAL_URL, ""]
+repo_url: https://github.com/gus-p-williams/PergamDataProcessing
+repo_name: gus-p-williams/PergamDataProcessing
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Data Model: data-model.md
+  - Pipeline Overview: pipeline-overview.md
+  - Flight Detection: flight-detection.md
+  - Drift Correction: drift-correction.md
+  - Ground Coordinates: ground-coordinates.md
+  - Tutorials:
+      - Run Example Dataset: tutorials/run-example-dataset.md
+      - Bring Your Own Data: tutorials/bring-your-own-data.md
+      - Interpret Results: tutorials/interpret-results.md
+  - Technical Reference:
+      - Configuration: reference/configuration.md
+      - Functions: reference/functions.md
+      - Read the Docs Setup: reference/readthedocs-setup.md
+  - FAQ: faq.md
+  - Changelog: changelog.md

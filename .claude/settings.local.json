@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ':*)",
+      "Bash(python _build_notebook.py)",
+      "Bash(python)",
+      "Bash(ls data/3_13_2026_Vernal_Cooked/*-results*)",
+      "Bash(rm -f data/3_13_2026_Vernal_Cooked/*-results-results.csv)",
+      "Bash(python:*)",
+      "Bash(rm:*)"
+    ]
+  }
+}
